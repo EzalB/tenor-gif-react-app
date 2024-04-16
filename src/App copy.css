@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1daf;
+}
+
+.searchBox {
+  height: 30px;
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.searchBox:hover input {
+  width: 400px;
+}
+
+.searchBox input {
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.7s;
+  background: transparent;
+}
+
+.searchBox .fasSearch {
+  color: #1daf;
+  font-size: 18px;
+}
