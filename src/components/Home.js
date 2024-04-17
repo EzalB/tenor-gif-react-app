@@ -25,7 +25,7 @@ const Home = () => {
 
         const fetchGifs = async () => {
             try {
-                const response = await axios.get(`http://localhost:8080/gif/search?query=${searchQuery}`);
+                const response = await axios.get(`https://tenor-gif-spring-boot-app.onrender.com//gif/search?query=${searchQuery}`);
                 setGifResults(response.data.results);
                 setNext(response.data.next);
                 setShowMoreButton(true);
@@ -42,7 +42,7 @@ const Home = () => {
 
     const loadMoreGifs = async () => {
         try {
-            const response = await axios.get(`http://localhost:8080/gif/search?query=${searchQuery}&pos=${next}`);
+            const response = await axios.get(`https://tenor-gif-spring-boot-app.onrender.com//gif/search?query=${searchQuery}&pos=${next}`);
             
             gifResults.push(...response.data.results);
             setNext(response.data.next);
