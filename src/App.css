@@ -135,7 +135,8 @@
   }
 
   .share-btn {
-    width: 7rem;
+    width: 10rem;
+    font-size: 1.2rem !important;
   }
 
   .modal-dialog {
@@ -158,11 +159,50 @@
   }
 
   .modalTitle {
-    width: 22rem;
+    width: 20rem;
     margin: auto;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .modalImage {
+    max-width: 20rem;
+    object-fit: cover;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .modal-dialog {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin-top: 0 !important;
+    }
+  
+    .modal-content {
+      width: 24rem !important;
+      height: 26rem;
+      border: 1px solid #564592 !important;
+      border-radius: 10px !important;
+    }
+  
+    .modalHeader {
+      border-bottom: 1px solid #023047 !important;
+    }
+  
+    .modalTitle {
+      width: 14rem;
+      margin: auto;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .modalImage {
+      max-width: 14rem;
+      object-fit: cover;
+    }
   }
 
   /* width */

@@ -39,7 +39,7 @@ const PopupModal = ({gif, onClose}) => {
                     <Modal.Title className="modalTitle">{gif.content_description}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                     <img src={gif.media_formats.gif.url} alt={gif.title} style={{ maxWidth: '300px', maxHeight: '300px'}} />
+                     <img src={gif.media_formats.gif.url} alt={gif.title} className="modalImage" />
                 </Modal.Body>
                 <Modal.Footer className="shareModal-footer">
                     <Button className="share-btn" variant="primary" onClick={handleShare}>
