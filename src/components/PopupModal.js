@@ -35,8 +35,8 @@ const PopupModal = ({gif, onClose}) => {
     return (
         <div>
             <Modal show={true} onHide={onClose}>
-                <Modal.Header closeButton>
-                    <Modal.Title>{gif.content_description}</Modal.Title>
+                <Modal.Header className="modalHeader" closeButton>
+                    <Modal.Title className="modalTitle">{gif.content_description}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                      <img src={gif.media_formats.gif.url} alt={gif.title} style={{ maxWidth: '300px', maxHeight: '300px'}} />

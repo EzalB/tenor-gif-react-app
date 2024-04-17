@@ -10,13 +10,17 @@ const Search = ({onSearch}) => {
         setSearchQuery(event.target.value);
     };
 
+    const clearSearch = () => {
+        setSearchQuery('');
+    };
+
     const handleSubmit = (event) => {
         event.preventDefault();
         onSearch(searchQuery);
     };
 
     return (
-            <form onSubmit={handleSubmit} className="searchBox" id="search-bar" closeButton>
+            <form onSubmit={handleSubmit} className="searchBox" id="search-bar">
                 <input
                     type="search"
                     value={searchQuery}
@@ -24,7 +28,7 @@ const Search = ({onSearch}) => {
                     placeholder="Type something..."
                     className="searchBox__input"
                 />
-                <FontAwesomeIcon className="cancelSearch" icon={faXmark} />
+                <FontAwesomeIcon className="cancelSearch" icon={faXmark} onClick={clearSearch} />
                 
                 <button type="submit" className="searchBox__btn" id="search-button">
                     <FontAwesomeIcon className="fasSearch searchBox__icon" icon={faMagnifyingGlass} />

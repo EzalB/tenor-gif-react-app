@@ -137,3 +137,88 @@
   .share-btn {
     width: 7rem;
   }
+
+  .modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 0 !important;
+  }
+
+  .modal-content {
+    width: 32rem !important;
+    height: 32rem;
+    border: 1px solid #564592 !important;
+    border-radius: 10px !important;
+  }
+
+  .modalHeader {
+    border-bottom: 1px solid #023047 !important;
+  }
+
+  .modalTitle {
+    width: 22rem;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#b8b9be; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #282642;
+  }
+
+  #return-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: rgb(224, 229, 236);
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    border-radius: 100%;
+    display: none;
+    z-index: 4;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  }
+  
+  #return-to-top i {
+    color: #000;
+    margin: 0;
+    position: relative;
+    left: 13px;
+    top: 8px;
+    font-size: 16px;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  #return-to-top:hover {
+    background: #FF4C60;
+  }
